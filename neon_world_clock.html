@@ -1,12 +1,38 @@
+
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
-<title>Neon World Clock — Unified</title>
-<!-- ... truncated for brevity, full HTML should go here ... -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Neon World Clock</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<p>Placeholder for the full HTML content.</p>
+
+<div id="clock-container">
+    <div id="analog">
+        <div id="face-glow"></div>
+        <div id="ticks"></div>
+
+        <div id="hour-hand" class="hand"></div>
+        <div id="minute-hand" class="hand"></div>
+        <div id="second-hand" class="hand second"></div>
+    </div>
+
+    <div id="digital"></div>
+
+    <div id="controls">
+        <input id="search" placeholder="Search country or region">
+        <div id="dropdown"></div>
+
+        <button id="addBtn">Add</button>
+        <div id="saved"></div>
+    </div>
+</div>
+
+<script src="timezones.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
